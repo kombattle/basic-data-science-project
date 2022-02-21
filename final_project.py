@@ -25,6 +25,8 @@ if username == "admin" and password == "1212312121":
     result = cur.fetchall()
 
     ## print result in console
+    print("Name List of student")
+    print("=" *30)
     for row in result:
     ##print(f"Name: {row[1]} {row[2]} Department: {row[3]} Score: {row[4]} city: {row[6]} country: {row[7]}")
         fullname = row[1] + " " + row[2]
