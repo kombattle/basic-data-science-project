@@ -21,7 +21,9 @@ result = cur.fetchall()
 
 ## print result in console
 for row in result:
-    print(row)
-
+    ##print(f"Name: {row[1]} {row[2]} Department: {row[3]} Score: {row[4]} city: {row[6]} country: {row[7]}")
+    fullname = row[1] + " " + row[2]
+    print(f"fullname: {fullname.upper()}")
+    
 ## close connection
 conn.close()
